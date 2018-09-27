@@ -1,146 +1,19 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-      <title>Muji-Paint</title>
-      <style>
-         <!--     body { background: #333;   }-->
-      </style>
-   </head>
-   <body>
-      <div class="row  alert alert-dark" role="alert">
-         <div class="col-10">
-            <h1>Interfaces – Práctico No1</h1>
-         </div>
-         <div class="col-2">
-            <button type="button" id="descargar" name="descargar imagen" class="btn btn-danger">Descargar</button>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-1">
-            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-               <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-               FONDO
-               </a>
-               <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-               DIBUJAR
-               </a>
-               <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-               FILTROS
-               </a>
-               <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
-               AJUSTE
-               </a>
-            </div>
-         </div>
-         <div class="col-3">
-            <div class="tab-content" id="v-pills-tabContent">
-               <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                  <div class="alert alert-secondary" role="alert">
-                     Seleccione un fondo
-                     <hr>
-                     <input type="button" value="IMG 1" id="cargarImagen1" name="img\\imagen1.jpg"/>
-                     <input type="button" value="IMG 2" id="cargarImagen2" name="img\\imagen2.jpg"/>
-                     <input type="button" value="IMG 3" id="cargarImagen3" name="img\\imagen3.jpg"/>
-                  </div>
-                  <div class="alert alert-secondary" role="alert">
-                     Cargar desde archivo
-                     <hr>
-                     <input type="file" id="subir" name="subir imagen" class="btn btn-dark col-12"/>
-                  </div>
-               </div>
-               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  <select id="gl" class="custom-select alert-secondary">
-                     <option value="l" selected="selected">lapiz</option>
-                     <option value="g">goma</option>
-                  </select>
-                  </br>
-                  </br>
-                  <div class="alert alert-secondary" role="alert">
-                     Lapiz
-                     <hr>
-                     <input type="range" id="linea"  name="linea" min="1" max="200" value = "20">
-                     <label for="color">Color </label> 
-                     <input type="color" id="color" name="color" value="#FF0000" 
-                        style=" padding: 0px; height: 40px; width: 40px; border: 0px;"  />
-                     <input type="button" id="cl1" name="#FFFFFF" 
-                        style="background-color: #FFFFFF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cl2" name="#FF00FF"
-                        style="background-color: #FF00FF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cl3" name="#FFFF00"
-                        style="background-color: #FFFF00; padding: 5px; height: 20px; width: 20px; border: 0px;"  />	
-                     <input type="button" id="cl4" name="#FF0000"
-                        style="background-color: #FF0000; padding: 5px; height: 20px; width: 20px; border: 0px;"  />		
-                     <input type="button" id="cl5" name="#0000FF"
-                        style="background-color: #0000FF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cl6" name="#000000"
-                        style="background-color: #000000; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                  </div>
-                  <div class="alert alert-secondary" role="alert">
-                     Goma 
-                     <hr>
-                     <input type="range" id="goma"  name="goma" min="1" max="200" value = "20">
-                     <label for="cgoma">C Goma </label> 
-                     <input type="color" id="cgoma" name="cgoma" value="#FFFFFF" 
-                        style=" padding: 0px; height: 40px; width: 40px; border: 0px;"  />
-                     <input type="button" id="cg1" name="#FFFFFF" 
-                        style="background-color: #FFFFFF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cg2" name="#FF00FF"
-                        style="background-color: #FF00FF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cg3" name="#FFFF00"
-                        style="background-color: #FFFF00; padding: 5px; height: 20px; width: 20px; border: 0px;"  />	
-                     <input type="button" id="cg4" name="#FF0000"
-                        style="background-color: #FF0000; padding: 5px; height: 20px; width: 20px; border: 0px;"  />		
-                     <input type="button" id="cg5" name="#0000FF"
-                        style="background-color: #0000FF; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                     <input type="button" id="cg6" name="#000000"
-                        style="background-color: #000000; padding: 5px; height: 20px; width: 20px; border: 0px;"  />
-                  </div>
-               </div>
-               <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                  <div class="alert alert-secondary" role="alert">
-                     FILTROS
-                     <hr>
-                     <button  type="button" value="Binario" id="binario" class="btn btn-dark">Binario</button>
-                     <hr>
-                     <button type="button" value="Invertir" id="invertir" class="btn btn-dark">Invertir</button>
-                     <hr>
-                     <button type="button" value="Escala de Grises" id="escalaGrises" class="btn btn-dark">Escala de Grises</button>
-                     <hr>
-                     <button type="button" value="Sepia" id="sepia" class="btn btn-dark">Sepia</button>
-                     <hr>
-                     <button type="button" value="blur" id="blur" class="btn btn-dark">Blur</button>
-                     <hr>
-                     <button type="button" value="Sharpen" id="sharpen" class="btn btn-dark">Sharpen</button>
-                  </div>
-               </div>
-               <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                  <div class="alert alert-dark" role="alert">
-                     Brillo
-                     <hr>
-                     <input type="range" id="brillo"  name="brillo" min="-255" max="255"> 
-                  </div>
-                  <div class="alert alert-dark" role="alert">
-                     Contraste
-                     <hr>
-                     <input type="range" id="contraste"  name="contraste" min="-255" max="255">
-                  </div>
-                  </br>
-               </div>
-            </div>
-         </div>
-         <div class="col-8">
-            <canvas id="canvas" width="800" height="500" style ="background-color:#FBFBFB;" ></canvas>
-         </div>
-      </div>
-      <script type="text/javascript" src="js/paint.js"></script>
-      <script type="text/javascript" src="js/dibujo.js"></script>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>4 en Linea - </title>
+		
+
+	</head>
+	<body style="background-color:#E6E6FA">
+	 <div style="text-align:center">
+		<canvas id="canvas" width="1000" height="600" style="border:1px solid green"></canvas>
+		</div>
+	
+	</body>
+	      <script type="text/javascript" src="js/mover.js"></script>
+	
+	
 </html>
+
