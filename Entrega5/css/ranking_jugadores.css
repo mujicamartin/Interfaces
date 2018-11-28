@@ -1,0 +1,34 @@
+.marcoRanking {
+	margin: 2%;
+}
+
+.listado {
+	list-style:none;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.lista {
+	padding: 10px;
+}
+
+#nombreJugador {
+	color: #e0ae37;
+}
+
+.foto {
+	 float:left;
+	 margin-left: 5%;
+}
+
+.datosJugador {
+	 float:left;
+	 margin-left: 2%;
+	 width: 650px;
+}
+
+.puesto {
+		 float:left;
+		 color: #206bbb;
+		 padding-top: 20px;
+}

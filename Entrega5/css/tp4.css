@@ -1,0 +1,362 @@
+
+
+/*-----------cuerpo---------*/
+
+
+
+.informacion {
+	margin: 25px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.portada {
+	margin-left: 18px;
+  width: 30%;
+  background: url("../img/portada3.jpg") no-repeat;
+  height: 400px;
+  background-size: auto;
+}
+
+.tituloJuego {
+  position:absolute;
+	top: 160px;
+  width: 745px;
+  left: 420px;
+  background: url("../img/tituloJuego.jpg") no-repeat right;
+  height: 81px;
+  background-size: auto;
+}
+
+.detalleJuego {
+	  position:absolute;
+		top: 260px;
+		left: 420px;
+		width: 720px;
+  color: #e4e1e1;
+  margin-left: 15px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.descripcion {
+  width: 70%;
+  height: 400px;
+  background-size: auto;
+}
+
+
+.boton {
+  margin-top: 5%;
+  width : 145px;
+  font-size: 16px;
+  background-color: #206bbb;
+  border: #206bbb;
+}
+
+.jugar {   /*  div que contiene al boton para ir al juego */
+  position: absolute ;
+  left: 435px;
+  top: 450px;
+}
+
+.favoritos {   /*  div que contiene al boton para ir al juego */
+  position: absolute ;
+  background: url("../img/favoritos.png");
+  left: 930px;
+  top: 470px;
+  width: 182px;
+  height: 18px;
+}
+
+.detalles {
+	height: 200px;
+}
+
+
+
+/*  CSS para el juego */
+
+.informacion2 {
+	position: absolute;
+	top: 600px;
+	left: 80px;
+	margin: 25px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pie_pagina2 {
+	position: absolute;
+	/* top: 900px;
+	left: 0px; */
+	width: 1263px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.relleno {
+	position: relative;
+	height: 450px;
+
+}
+
+
+
+.fondoOn {    /*  estilo del fondo */
+  position: absolute;
+	left: 165px;
+	top: 150px;
+   background:
+	   url("../img/estrellas2.png"),
+   url("../img/fondo-negro.jpg") ;
+ background-repeat: repeat, repeat;
+		width: 580px;
+		height: 405px;
+   /* background-repeat: repeat-y; */
+   background-size: cover;
+  animation: fondo 15s linear infinite;
+overflow:hidden;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+@keyframes fondo {
+    from { background-position: 0 100%; }
+		to { background-position: 0 0; }
+}
+
+#fondoOff {    /*  estilo del fondo */
+  position: absolute;
+	left: 20px;
+	top: 15px;
+   background: url("../img/gameOver2.jpg") ;
+	width: 500px;
+	height: 375px;
+   background-repeat: no-repeat;
+   background-size: cover;
+	 z-index: 2;
+}
+
+#fondoBienv {    /*  estilo del fondo */
+  position: absolute;
+	left: 60px;
+	top: 185px;
+   background: url("../img/bienvenida.jpg") ;
+	width: 440px;
+	height: 105px;
+   background-repeat: no-repeat;
+   background-size: cover;
+	 z-index: 2;
+}
+
+#fondoFin {    /*  estilo del fondo */
+  position: absolute;
+	left: 20px;
+	top: 15px;
+   background: url("../img/festejo.jpg") ;
+	width: 500px;
+	height: 375px;
+   background-repeat: no-repeat;
+   background-size: cover;
+	 z-index: 2;
+}
+
+#nave {    /*  estilo de la nave */
+  position: absolute ;
+  left: 240px;
+  bottom: 10px;
+   width : 73px;
+   height : 100px;
+   background: url("../img/nave3.png") left;
+   animation: vuelo 1s steps(4) infinite;
+}
+
+@keyframes vuelo {
+  100% {background-position:-292px; }
+}
+
+@keyframes explocion {
+  100% {background-position: -2048px ; }
+}
+
+@keyframes derecha {
+  100% {  transform: rotate(-25deg);   }
+}
+
+@keyframes izquierda {
+  100% {  transform: rotate(25deg);  }
+}
+
+
+/*  estilo de los enemigos */
+#roca {
+  position: absolute ;
+  /* left: 70px;
+  top: -70px; */
+   width : 50px;
+   height : 52px;
+   background: url("../img/asteroide2.png") left;
+   animation: enemigos 0.9s steps(8) infinite;
+   z-index: 2;
+}
+
+@keyframes enemigos {
+  100% {background-position:-400px; }
+}
+
+#roca1 {
+  position: absolute ;
+  left: 70px;
+  top: -170px;
+   width : 50px;
+   height : 52px;
+   background: url("../img/asteroide2.png") left;
+   animation: enemigos 0.9s steps(8) infinite;
+   z-index: 2;
+}
+
+#roca8 {
+  position: absolute ;
+  left: 110px;
+  top: -320px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.5s steps(8) infinite;
+}
+
+#roca7 {
+  position: absolute ;
+  left: 170px;
+  top: -180px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.5s steps(8) infinite;
+}
+
+#roca2 {
+  position: absolute ;
+  left: 220px;
+  top: -320px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.5s steps(8) infinite;
+}
+
+#roca3 {
+  position: absolute ;
+  left: 250px;
+  top: -670px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.5s steps(8) infinite;
+}
+
+#roca4 {
+  position: absolute ;
+  left: 320px;
+  top: -259px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.4s steps(8) infinite;
+}
+
+#roca5 {
+  position: absolute ;
+  left: 420px;
+  top: -170px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.6s steps(8) infinite;
+}
+
+#roca6 {
+  position: absolute ;
+  left: 450px;
+  top: -470px;
+  width : 50px;
+  height : 52px;
+  background: url("../img/asteroide2.png") left;
+   z-index: 2;
+   animation: enemigos 0.2s steps(8) infinite;
+}
+
+
+
+/*  estilo del tablero */
+.tablero {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 320px;
+  height: 365px;
+  border: solid #2b2b2b 3px;
+	/* z-index: 10; */
+}
+
+.izquierdoTablero {
+	position: absolute;
+	left: 715px;
+		top: 150px;
+	width: 350px;
+  height: 405px;
+	background:    url("../img/fondo-negro.jpg") ;
+	/* background-color: yellow; */
+}
+
+/* .izq {
+	background-color: black;
+	position: absolute;
+	left: 540px;
+	top: 0;
+	width: 350px;
+	height: 400px;
+} */
+
+.titulo {
+  color: #fbcc41;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.resumen, {
+  color: #efebeb;
+
+}
+
+.puntos {
+margin-top: 20%;
+  color: #efebeb;
+	font-size: 20px;
+}
+
+.nuevoJuego {
+	margin-top: 15%;
+  left: 20%;
+  top: 75%;
+}
+
+
+.votantes {
+	padding-bottom: 6px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

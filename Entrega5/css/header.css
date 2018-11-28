@@ -1,0 +1,119 @@
+/*  para el header*/
+
+
+
+
+
+
+.buscarHeader {
+	font-size: 12px;
+	background-color: #206bbb;
+	border: #206bbb;
+	color: #FFFFFF;
+	width: 40px;
+	height:40px;
+	/*padding-left: 6px;*/
+}
+
+.todosHeader {
+	font-size: 12px;
+	background-color: #206bbb;
+	border: #206bbb;
+	color: #FFFFFF;
+	width: 100px;
+	min-width: 100px;
+	height:40px;
+	/*margin-left: 15%;*/
+}
+
+.colorBoton {
+	background-color: #206bbb;
+	border: #206bbb;
+}
+
+.barraBusqueda {
+	margin-top: 1%;
+}
+
+#barra {
+		width: 320px;
+
+			font-size: 12px;
+}
+
+.loginBoton {
+	font-size: 12px;
+	border-radius: 2px;
+	border-color:  #888888;
+	color: #FFFFFF;
+	background-color: transparent;
+	height:40px;
+	width: 90px;
+		margin-left: 2%;
+text-align: center;
+}
+
+.lateral1 {
+	//border: 1px solid #FF0000;
+	width: 280px;
+	min-width: 280px;
+	height:90px;
+ float:left;
+ margin-left: 12px;
+}
+.usuarioLogueado {
+	 float:left;
+
+	//	border: 1px solid #FFFF00;
+	 width: 220px;
+	 min-width: 220px;
+	 	height:90px;
+	 padding-left: 20px;
+	/* margin-top: 5px; */
+	 padding-top: 12px;
+}
+
+
+
+.lateral2 {
+	//border: 1px solid #FFFF00;
+	 width: 150px;
+	 min-width: 150px;
+	 	height:90px;
+ float:left;
+ margin-top: 1px;
+ margin-left: 3px;
+	 padding-top: 12px;
+}
+
+.medio {
+	 padding-top: 12px;
+	//	border: 1px solid #FF00FF;
+	width: 500px;
+	min-width: 500px;
+		height:90px;
+	 float:left;
+	 /* margin-left: 1%; */
+}
+
+.inferior {
+
+	margin-left: 40px;
+	min-width: 500px;
+	font-size: 11px;
+
+}
+
+.menuInferior {
+		//border: 1px solid #FF00FF;
+		padding: 0;
+		min-width: 300px;
+
+
+}
+
+.categoria {
+		font-size: 8px;
+		background-color: rgba(10, 10, 10, 0.3);
+		min-width: 1200px;
+}

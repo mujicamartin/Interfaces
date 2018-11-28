@@ -1,0 +1,69 @@
+
+/*para login*/
+
+.social {
+	padding: 0;
+}
+
+.inicio {
+	text-align: left;
+	margin-left: 32px;
+	color: #e0ae37;
+}
+
+.borde {
+	border-style:solid;
+border-color:#888888;
+padding: 2%;
+width: 560px;
+margin-left: 25%;
+margin-bottom: 4%;
+}
+
+.label {
+		margin-left: 32px;
+}
+
+.ingresar {
+  font-size: 16px;
+		margin-left: 32px;
+  background-color: #206bbb;
+  border: #206bbb;
+	color: #FFFFFF;
+	width: 500px;
+	height:40px;
+}
+
+.noRegistrado {
+	margin-top: 20%;
+}
+
+.botonRegistrar {
+	font-size: 16px;
+	border-radius: 2px;
+	border-color:  #FFFFFF;
+		color: #FFFFFF;
+	background-color: transparent;
+	height:40px;
+	width: 490px;
+		margin-left: 32px;
+	margin-top: 2%;
+}
+
+.inputForm {
+	height:23px;
+		width: 470px;
+	margin-bottom: 0;
+	margin-left: 32px;
+}
+
+
+#contraseña {
+	color: #206bbb;
+	margin-left: 240px;
+	/* text-align: left; */
+}
+
+.linkNuevo {
+	margin-left: 184px;
+}

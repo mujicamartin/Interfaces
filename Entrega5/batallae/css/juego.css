@@ -1,0 +1,310 @@
+.juego {
+	margin: 25px;
+	width: 1100px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255);
+}
+
+.enemigo2{
+	border-style: solid;
+	border-color: red;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url('../img/nave.png') left center;
+	animation: play 4s steps(24) infinite;
+}
+
+
+.player{
+
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url('../img/nave2.png') left center;
+	animation: play 3s steps(24) infinite;
+}
+
+@keyframes play {
+100% { background-position: -1440px; }
+}
+
+.player_explota{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: url('../img/explota.png') left center;
+	animation: play_explota 3s steps(24);
+	animation-fill-mode: both;
+
+}
+
+@keyframes play_explota {
+100% { background-position: -1440px; }
+}
+
+
+
+.moster{
+
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: url('../img/nave.png') left center;
+	animation: play_moster 4s steps(24) infinite;
+}
+
+@keyframes play_moster {
+100% { background-position: -1200px; }
+}
+
+
+
+.satelite{
+	position: absolute;
+	width: 36px;
+	height: 34px;
+	background: url('../img/satelite.png') left center;
+	animation: play_satelite 4s steps(8) infinite;
+}
+
+@keyframes play_satelite {
+100% { background-position: -288px; }
+}
+
+.asteroide{
+	position: absolute;
+	width: 34px;
+	height: 34px;
+	background: url('../img/asteroide.png') left center;
+	animation: play_asteroide 4s steps(30) infinite;
+}
+
+@keyframes play_asteroide {
+100% { background-position: -1020px; }
+}
+
+
+.asteroide2{
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	background: url('../img/asteroide.png') left center;
+	 background-size:  840px 28px;
+	
+	animation: play_asteroide2 3.5s steps(30) infinite;
+}
+
+@keyframes play_asteroide2 {
+100% { background-position: -840px; }
+}
+
+
+.asteroide3{
+
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: url('../img/asteroide.png') left center;
+	 background-size:  750px 25px;
+	
+	animation: play_asteroide3 3s steps(30) infinite;
+}
+
+@keyframes play_asteroide3 {
+100% { background-position: -750px; }
+}
+
+.asteroide4{
+
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url('../img/asteroide.png') left center;
+	background-size:  600px 20px;
+	
+	animation: play_asteroide4 2.5s steps(30) infinite;
+}
+
+@keyframes play_asteroide4 {
+100% { background-position: -600px; }
+}
+
+
+
+.asteroide5{
+
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: url('../img/asteroide.png') left center;
+	background-size:  450px 15px;
+	
+	animation: play_asteroide5 1.5s steps(30) infinite;
+}
+
+@keyframes play_asteroide5 {
+100% { background-position: -450px; }
+}
+
+.asteroide6{
+	/*border-style: solid;
+	border-color: red;*/
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: url('../img/asteroide.png') left center;
+	background-size:  1200px 40px;
+	
+	animation: play_asteroide6 4.2s steps(30) infinite;
+}
+
+@keyframes play_asteroide6 {
+100% { background-position: -1200px; }
+}
+
+.asteroide7{
+	position: absolute;
+	width: 43px;
+	height: 43px;
+	background: url('../img/asteroide.png') left center;
+	background-size:  1290px 43px;
+	
+	animation: play_asteroide7 4.5s steps(30) infinite;
+}
+
+@keyframes play_asteroide7 {
+100% { background-position: -1290px; }
+}
+
+.asteroide8{
+
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	background: url('../img/asteroide.png') left center;
+	background-size:  1440px 48px;
+	
+	animation: play_asteroide8 5s steps(30) infinite;
+}
+
+@keyframes play_asteroide8 {
+100% { background-position: -1440px; }
+}
+
+
+
+.inicio{
+	background-image: url("../img/inicio1.png");
+	position: absolute;
+	width: 1100px;
+	height: 500px;
+}
+
+
+
+.inicio{
+	background-image: url("../img/inicio.png");
+	position: absolute;
+	width: 1100px;
+	height: 500px;
+}
+
+
+
+.gameover{
+	background-image: url("../img/gameover.png");
+	position: absolute;
+	width: 1100px;
+	height: 500px;
+}
+
+
+
+
+
+/*------- fondo ---------*/
+
+.fondo1 {
+
+	position: absolute;
+	width: 1100px;
+	height: 500px;
+	background-image: url(../img/fondo1.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-repeat: repeat-x;
+	animation: fondo_1 300s linear infinite;
+
+}
+
+@keyframes fondo_1 {
+    from { background-position: 0 100%; }
+    to { background-position: 0 0; }
+}
+
+.fondo2 {
+	position: absolute;
+	width: 1100px;
+	height: 500px;
+	background-image: url(../img/fondo2.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-repeat: repeat-x;
+	animation: fondo_2 120s linear infinite;
+
+}
+
+@keyframes fondo_2 {
+    from { background-position: 0 100%; }
+    to { background-position: 0 0; }
+}
+
+.fondo3 {
+	position: absolute;
+	
+	width: 1100px;
+	height: 500px;
+
+	background-image: url(../img/fondo3.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-repeat: repeat-x;
+	animation: fondo_3 40s linear infinite;
+
+}
+
+@keyframes fondo_3 {
+    from { background-position: 0 100%; }
+    to { background-position: 0 0; }
+}
+
+
+/*-------------------*/
+
+.info{
+	position: absolute;
+	width: 1100px;
+	height: 50px;
+		background-color: rgba(0, 0, 0, 0.6);
+}
+
+.puntos {
+	padding: 10px;
+	text-align: right;
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	Font-size: 18px;
+	 text-shadow: 0px 0px 10px #000;
+	width: 1050px;
+	height: 50px;
+
+              
+}
+.start_game{
+	position: absolute;
+	top:330px;
+	right:480px;
+}

@@ -1,0 +1,85 @@
+.clasificacion {
+	//border: 1px solid #00FFFF;
+	float: right; 
+  
+  direction: rtl;
+ // unicode-bidi: bidi-override;
+}
+
+.clasificacion_texto{
+	//border: 1px solid #00FFFF;
+	float: right; 
+
+padding: 5px;
+
+}
+
+
+#form {
+
+}
+
+#form p {
+  text-align: center;
+ }
+
+#form label {
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]~label {
+	
+  font-size:30px;
+  color: grey;
+}
+
+
+input[type="radio"] ~ label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]~label {
+	margin-top: -30px;
+	padding:6px;
+	//font-family: sans-serif;
+  font-size:45px;
+  color: grey;
+}
+
+input[type="checkbox"]~label:hover{
+
+	color: red;
+    animation: pulse 0.5s ease infinite;
+}
+input[type="checkbox"]:checked ~ label {
+  color: red;
+}
+
+
+/*
+.heart {
+  fill: #1a2f42;
+  position: relative;
+  top: 5px;
+  width: 200px;
+  animation: pulse 1s ease infinite;
+}*/
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

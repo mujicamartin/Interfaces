@@ -1,0 +1,183 @@
+
+body {
+	background-image: url("../img/fondo.png");
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	Font-size: 14px;
+}
+
+a:link {
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:active {
+    color: #FFFFFF;
+}
+
+
+
+
+/*-------------header ------*/
+.header {
+	box-shadow: 2px 2px 10px #000;  
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url("../img/fondo.png");
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+//	justify-content: center;
+	z-index: 200;
+}
+
+.logo{
+	float: left;
+	width: 229px;
+	height: 85px;
+  background-image: url("../img/logo.png");
+}
+
+.extra_header{
+	float: left;
+	width: 859px;
+	height: 80px;
+	background-image: url("../img/extra_header.png");
+}
+
+
+
+/*-----------cuerpo---------*/
+
+.body{
+  padding-top: 100px;
+}
+
+
+.breadcrumbs  {
+		
+	text-align: left;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 18px;
+	padding: 15px 0px 12px 0px;
+	color: #e0ae37;
+	font-family: Arial, Helvetica, sans-serif;
+	Font-size: 12px;
+	
+}
+
+
+.breadcrumbs a   {
+    color: #e0ae37;
+}
+
+.breadcrumbs a:visited {
+    color: #e0ae37;
+}
+
+.breadcrumbs a:hover {
+    color: #e0ae37;
+}
+
+.breadcrumbs a:active {
+    color: #e0ae37;
+}
+
+
+
+/*
+.juego {
+	margin: 25px;
+	width: 1100px;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255);
+}
+*/
+
+.informacion {
+	margin: 25px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+/*-----------pie de pagina---------*/
+
+.contenedor {
+	margin: 5px;
+	text-align: center;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1200px;
+}
+.filtro {
+	margin: 0px;
+	text-align: center;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+.pie_pagina {
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pie_izq{
+	float: left;
+	text-align: left;
+	padding: 10px;
+}
+.pie_der{
+	float: right;
+	text-align: left;
+	padding: 10px;
+}
+
+/*para login*/
+
+
+
+
+/*para bootrap*/
+
+.nav{
+	width: 1100px;
+}
+
+
+.tab-content{
+	width: 1100px;
+	text-align: left;
+	padding: 20px;
+	background-color: rgba(10, 10, 10, 0.3);
+}
+
+/**   batalla juego       ***/
+.juegoIntro {
+	width: 1100px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	background-color: rgba(10, 10, 10, 0.3);
+}
+
